@@ -1,0 +1,27 @@
+{
+  "name": "lego-store-js-wrapper",
+  "version": "0.0.0",
+  "description": "Wrapper for the LEGO Store website",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:jonathan-defraiteur-projects/apps/brick/lego-store-js-wrapper.git"
+  },
+  "keywords": [
+    "lego",
+    "store",
+    "wrapper",
+    "brick",
+    "data",
+    "api"
+  ],
+  "author": "Jonathan Defraiteur",
+  "license": "ISC",
+  "files": [
+    "lib/**/*"
+  ]
+}
