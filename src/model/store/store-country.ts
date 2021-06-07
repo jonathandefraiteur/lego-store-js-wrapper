@@ -9,8 +9,8 @@ export interface StoreCountry {
   languages: LanguageCode[];
 
   /**
-   * @param {LanguageCode} language target language
+   * @param {LanguageCode} [language] target language
    * @return {string} as "ll-cc" for language-country
    */
-  getStorePath(language: LanguageCode): string;
+  getStorePath(language?: LanguageCode): string;
 }
