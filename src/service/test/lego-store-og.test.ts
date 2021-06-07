@@ -1,4 +1,4 @@
-import { LegoStoreOgImpl, testOGS } from '../lego-store-og';
+import { LegoStoreOgImpl } from '../lego-store-og';
 import { StoreCountry } from '../../model/store/store-country';
 import { Options } from '../../model/open-graph/options';
 import { StoreCountryImpl } from '../../model/store/store-country-impl';
@@ -23,14 +23,6 @@ class SubjectOfTest extends LegoStoreOgImpl {
     return super.getOptions(storeCountry, productId);
   }
 }
-
-describe('temp tests', () => {
-  test('testOGS()', () => {
-    return testOGS().then((res) => {
-      expect(res.error).toBe(false);
-    });
-  });
-});
 
 describe('LegoStoreOgImpl', () => {
   let sut: SubjectOfTest;
