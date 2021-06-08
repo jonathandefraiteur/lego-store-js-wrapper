@@ -4,275 +4,275 @@ import { LanguageCode } from './language-code';
 import { StoreCountry } from './store-country';
 import { StoreCountryImpl } from './store-country-impl';
 
-export const LEGO_STORES: StoreCountry[] = [
-  new StoreCountryImpl(
+export const LEGO_STORES: Record<CountryCode, StoreCountry> = {
+  [CountryCode.CA]: new StoreCountryImpl(
     WorldRegion.NorthAmerica,
     CountryCode.CA,
     [LanguageCode.EN, LanguageCode.FR],
     'Canada'
   ),
-  new StoreCountryImpl(
+  [CountryCode.MX]: new StoreCountryImpl(
     WorldRegion.NorthAmerica,
     CountryCode.MX,
     [LanguageCode.ES, LanguageCode.EN],
     'Mexico'
   ),
-  new StoreCountryImpl(
+  [CountryCode.US]: new StoreCountryImpl(
     WorldRegion.NorthAmerica,
     CountryCode.US,
     [LanguageCode.EN],
     'United States'
   ),
-  new StoreCountryImpl(
+  [CountryCode.BR]: new StoreCountryImpl(
     WorldRegion.SouthAmerica,
     CountryCode.BR,
     [LanguageCode.PT],
     'Brasil'
   ),
-  new StoreCountryImpl(
+  [CountryCode.AR]: new StoreCountryImpl(
     WorldRegion.SouthAmerica,
     CountryCode.AR,
     [LanguageCode.ES],
     'Latinoamerica'
   ),
-  new StoreCountryImpl(
+  [CountryCode.BE]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.BE,
     [LanguageCode.FR, LanguageCode.NL, LanguageCode.EN],
     'Belgium'
   ),
-  new StoreCountryImpl(
+  [CountryCode.CZ]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.CZ,
     [LanguageCode.CS, LanguageCode.EN],
     'Czech Republic'
   ),
-  new StoreCountryImpl(
+  [CountryCode.DK]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.DK,
     [LanguageCode.DA, LanguageCode.EN],
     'Denmark'
   ),
-  new StoreCountryImpl(
+  [CountryCode.DE]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.DE,
     [LanguageCode.DE, LanguageCode.EN],
     'Germany'
   ),
-  new StoreCountryImpl(
+  [CountryCode.EE]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.EE,
     [LanguageCode.ET, LanguageCode.EN],
     'Estonia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.ES]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.ES,
     [LanguageCode.ES, LanguageCode.EN],
     'Spain'
   ),
-  new StoreCountryImpl(
+  [CountryCode.FI]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.FI,
     [LanguageCode.EN, LanguageCode.FI],
     'Finland'
   ),
-  new StoreCountryImpl(
+  [CountryCode.FR]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.FR,
     [LanguageCode.FR, LanguageCode.EN],
     'France'
   ),
-  new StoreCountryImpl(
+  [CountryCode.GR]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.GR,
     [LanguageCode.EN],
     'Greece'
   ),
-  new StoreCountryImpl(
+  [CountryCode.HU]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.HU,
     [LanguageCode.EN, LanguageCode.HU],
     'Hungary'
   ),
-  new StoreCountryImpl(
+  [CountryCode.IE]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.IE,
     [LanguageCode.EN],
     'Ireland'
   ),
-  new StoreCountryImpl(
+  [CountryCode.IT]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.IT,
     [LanguageCode.IT, LanguageCode.EN],
     'Italy'
   ),
-  new StoreCountryImpl(
+  [CountryCode.LV]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.LV,
     [LanguageCode.LV, LanguageCode.EN],
     'Latvia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.LT]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.LT,
     [LanguageCode.LT, LanguageCode.EN],
     'Lithuania'
   ),
-  new StoreCountryImpl(
+  [CountryCode.LU]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.LU,
     [LanguageCode.FR, LanguageCode.DE, LanguageCode.EN],
     'Luxemburg'
   ),
-  new StoreCountryImpl(
+  [CountryCode.NL]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.NL,
     [LanguageCode.NL, LanguageCode.EN],
     'Netherlands'
   ),
-  new StoreCountryImpl(
+  [CountryCode.NO]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.NO,
     [LanguageCode.NB, LanguageCode.EN],
     'Norway'
   ),
-  new StoreCountryImpl(
+  [CountryCode.AT]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.AT,
     [LanguageCode.DE, LanguageCode.EN],
     'Austria'
   ),
-  new StoreCountryImpl(
+  [CountryCode.PL]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.PL,
     [LanguageCode.PL, LanguageCode.EN],
     'Poland'
   ),
-  new StoreCountryImpl(
+  [CountryCode.PT]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.PT,
     [LanguageCode.PT, LanguageCode.EN],
     'Portugal'
   ),
-  new StoreCountryImpl(
+  [CountryCode.RO]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.RO,
     [LanguageCode.RO],
     'Romania'
   ),
-  new StoreCountryImpl(
+  [CountryCode.RU]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.RU,
     [LanguageCode.RU],
     'Russia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.CH]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.CH,
     [LanguageCode.DE, LanguageCode.FR, LanguageCode.EN],
     'Switzerland'
   ),
-  new StoreCountryImpl(
+  [CountryCode.SI]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.SI,
     [LanguageCode.FI],
     'Sovenia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.SK]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.SK,
     [LanguageCode.SK, LanguageCode.EN],
     'Slovakia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.SE]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.SE,
     [LanguageCode.EN, LanguageCode.SV],
     'Sweden'
   ),
-  new StoreCountryImpl(
+  [CountryCode.GB]: new StoreCountryImpl(
     WorldRegion.Europe,
     CountryCode.GB,
     [LanguageCode.EN],
     'United Kingdom'
   ),
-  new StoreCountryImpl(
+  [CountryCode.AU]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.AU,
     [LanguageCode.EN],
     'Australia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.IN]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.IN,
     [LanguageCode.EN],
     'India'
   ),
-  new StoreCountryImpl(
+  [CountryCode.MY]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.MY,
     [LanguageCode.EN],
     'Malaysia'
   ),
-  new StoreCountryImpl(
+  [CountryCode.NZ]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.NZ,
     [LanguageCode.EN],
     'New Zealand'
   ),
-  new StoreCountryImpl(
+  [CountryCode.SG]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.SG,
     [LanguageCode.EN],
     'Singapore'
   ),
-  new StoreCountryImpl(
+  [CountryCode.KR]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.KR,
     [LanguageCode.KO],
     'Korea'
   ),
-  new StoreCountryImpl(
+  [CountryCode.CN]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
-    CountryCode.CH,
+    CountryCode.CN,
     [LanguageCode.ZH],
     'China'
   ),
-  new StoreCountryImpl(
+  [CountryCode.JP]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.JP,
     [LanguageCode.JA],
     'Japan'
   ),
-  new StoreCountryImpl(
+  [CountryCode.HK]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.HK,
     [LanguageCode.ZH],
     'Hong Kong'
   ),
-  new StoreCountryImpl(
+  [CountryCode.TW]: new StoreCountryImpl(
     WorldRegion.AsiaPacific,
     CountryCode.TW,
     [LanguageCode.ZH],
     'Taiwan'
   ),
-  new StoreCountryImpl(
+  [CountryCode.ZA]: new StoreCountryImpl(
     WorldRegion.MiddleEastAfrica,
     CountryCode.ZA,
     [LanguageCode.EN],
     'South Africa'
   ),
-  new StoreCountryImpl(
+  [CountryCode.TR]: new StoreCountryImpl(
     WorldRegion.MiddleEastAfrica,
     CountryCode.TR,
     [LanguageCode.TR],
     'Turkey'
   ),
-  new StoreCountryImpl(
+  [CountryCode.AE]: new StoreCountryImpl(
     WorldRegion.MiddleEastAfrica,
     CountryCode.AE,
     [LanguageCode.EN],
     'United Arab Emirates'
   )
-];
+};
