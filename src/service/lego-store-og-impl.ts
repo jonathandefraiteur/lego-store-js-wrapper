@@ -16,10 +16,10 @@ export class LegoStoreOgImpl implements LegoStoreOg {
 
   /**
    * Constructor of LegoStoreOgImpl
-   * @param {CountryCode} [country]
-   * @param {LanguageCode} [language]
+   * @param {CountryCode|null} [country]
+   * @param {LanguageCode|null} [language]
    */
-  constructor(country?: CountryCode, language?: LanguageCode) {
+  constructor(country?: CountryCode | null, language?: LanguageCode | null) {
     this._storeCountry = LEGO_STORES[country ?? CountryCode.DK];
     this._language = language ?? LanguageCode.EN;
   }
@@ -33,11 +33,11 @@ export class LegoStoreOgImpl implements LegoStoreOg {
    */
   getOptions(
     productId: string,
-    language?: LanguageCode,
-    country?: CountryCode
+    language?: LanguageCode | null,
+    country?: CountryCode | null
   ): Options {
     const store = country ? LEGO_STORES[country] : this._storeCountry;
-    const langCountry = store.getStorePath(language);
+    const langCountry = store.getStorePath(language ?? this._language);
     return {
       url: `https://www.lego.com/${langCountry}/product/${productId}`,
       customMetaTags: LEGO_CUSTOM_TAGS

@@ -11,7 +11,7 @@ export interface LegoStoreOg {
    */
   search(
     productId: string,
-    language?: LanguageCode,
-    country?: CountryCode
+    language?: LanguageCode | null,
+    country?: CountryCode | null
   ): Promise<SuccessResult | ErrorResult>;
 }
