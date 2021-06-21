@@ -19,7 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:jonathan-defraiteur-projects/apps/brick/lego-store-js-wrapper.git"
+    "url": "git@github.com:jonathandefraiteur/lego-store-js-wrapper.git",
+    "web": "https://github.com/jonathandefraiteur/lego-store-js-wrapper"
+  },
+  "bugs": {
+    "url": "https://github.com/jonathandefraiteur/lego-store-js-wrapper/issues"
   },
   "keywords": [
     "lego",
@@ -29,8 +33,8 @@
     "data",
     "api"
   ],
-  "author": "Jonathan Defraiteur",
-  "license": "ISC",
+  "author": "Jonathan Defraiteur <jonathan.defraiteur@gmail.com> (jonathandefraiteur.me)",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
