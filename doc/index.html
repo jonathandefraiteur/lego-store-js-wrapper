@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../lib/service/lego-store-og.js"></script>
+  <title>LEGO Store JS Wrapper</title>
+</head>
+<body>
+
+  <h1>LEGO Store JS Wrapper</h1>
+
+  <label>
+    Product ID
+    <input type="text">
+  </label>
+  <button>search</button>
+
+  <pre id="result"></pre>
+
+  <script>
+    import {LegoStoreOgImpl} from "../lib/service/lego-store-og-impl";
+
+    let lego = new LegoStoreOgImpl();
+
+    lego.search('42125').then(result => {
+      console.log('result:', result);
+
+      document.getElementById('result').innerText = JSON.stringify(result);
+    });
+
+  </script>
+</body>
+</html>
